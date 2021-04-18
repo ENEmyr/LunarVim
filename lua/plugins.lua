@@ -40,24 +40,24 @@ return require("packer").startup(
         use {"glepnir/lspsaga.nvim", opt = true}
         use {"kabouzeid/nvim-lspinstall", opt = true}
 
-        -- Tlescope
+        -- Telescope
         use {"nvim-lua/popup.nvim", opt = true}
         use {"nvim-lua/plenary.nvim", opt = true}
         use {"nvim-telescope/telescope.nvim", opt = true}
 
-        -- Dbugging
+        -- Debugging
         use {"mfussenegger/nvim-dap", opt = true}
 
-        -- Atocomplete
+        -- Autocomplete
         use {"hrsh7th/nvim-compe", opt = true}
         use {"hrsh7th/vim-vsnip", opt = true}
         use {"rafamadriz/friendly-snippets", opt = true}
 
-        -- Teesitter
+        -- Treesitter
         use {"nvim-treesitter/nvim-treesitter", run = ":TSUpdate"}
         use {"windwp/nvim-ts-autotag", opt = true}
 
-        -- Eplorer
+        -- Explorer
         use "kyazdani42/nvim-tree.lua"
         -- TODO remove when open on dir is supported by nvimtree
         use "kevinhwang91/rnvimr"
@@ -102,5 +102,28 @@ return require("packer").startup(
         require_plugin("nvim-web-devicons")
         require_plugin("galaxyline.nvim")
         require_plugin("barbar.nvim")
+
+		-- Own plugins
+		-- use 'roman/golden-ratio'
+		-- use 'camspiers/animate.vim'
+		-- use 'camspiers/lens.vim' -- Plugin that use for automatic resize windows like golden-ratio but the resized window ratio it's not a golden ratio
+		use 'dm1try/golden_size' -- Replace golden-ratio, to fix the problem that golden-ratio keep resize floating windows and affect to some plugin like telescope
+		use 'easymotion/vim-easymotion'
+		use 'terryma/vim-multiple-cursors'
+		use 'haya14busa/incsearch.vim'
+		use 'haya14busa/incsearch-fuzzy.vim'
+		use 'haya14busa/incsearch-easymotion.vim' -- Easy Fuzzy Search
+		use 'phaazon/hop.nvim'
+		use 'mcchrish/nnn.vim'
+		use {'neoclide/coc.nvim', branch = 'release'} -- Easy Fuzzy Search
+		require_plugin('golden_size')
+		require_plugin('vim-easymotion')
+		require_plugin('vim-multiple-cursors')
+		require_plugin('incsearch.vim')
+		require_plugin('incsearch-fuzzy.vim')
+		require_plugin('incsearch-easymotion.vim')
+		require_plugin('coc.nvim')
+		require_plugin('hop.nvim')
+		require_plugin('nnn.vim')
     end
 )

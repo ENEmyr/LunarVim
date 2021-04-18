@@ -16,7 +16,6 @@ require('lv-gitsigns')
 require('lv-nvimtree')
 require('lv-treesitter')
 require('lv-autopairs')
-require('lv-barbar')
 require('lv-rnvimr')
 
 -- Which Key (Hope to replace with Lua plugin someday)
@@ -50,3 +49,12 @@ require('lsp.tailwindcss-ls')
 require('lsp.ruby-ls')
 require('lsp.kotlin-ls')
 
+-- My old config 
+
+require('golden-size')
+require('nnn')
+require('vim-multiple-cursors')
+require('nv-hop')
+vim.cmd('source ~/.config/nvim/vimscript/easy-fuzzy-motion/init.vim')
+vim.cmd('source ~/.config/nvim/vimscript/easymotion/init.vim')
+vim.api.nvim_command('autocmd VimEnter * :CocDisable') -- Disable Coc event to prevent annoying warning msg
