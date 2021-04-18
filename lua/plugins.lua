@@ -115,6 +115,10 @@ return require("packer").startup(
 		use 'haya14busa/incsearch-easymotion.vim' -- Easy Fuzzy Search
 		use 'phaazon/hop.nvim'
 		use 'mcchrish/nnn.vim'
+		-- use {'blackcauldron7/surround.nvim', config = function()
+		-- 	require "surround".setup {}
+		-- 	end}
+		use 'tpope/vim-surround'
 		use {'neoclide/coc.nvim', branch = 'release'} -- Easy Fuzzy Search
 		require_plugin('golden_size')
 		require_plugin('vim-easymotion')
@@ -125,5 +129,7 @@ return require("packer").startup(
 		require_plugin('coc.nvim')
 		require_plugin('hop.nvim')
 		require_plugin('nnn.vim')
+		-- require_plugin('surround.nvim')
+		-- require_plugin('vim-surround')
     end
 )
