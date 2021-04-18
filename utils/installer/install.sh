@@ -78,7 +78,7 @@ installpacker() {
 
 cloneconfig() {
 	echo "Cloning LunarVim configuration"
-	git clone https://github.com/ChristianChiarulli/lunarvim.git ~/.config/nvim
+	git clone https://github.com/Untesler/lunarvim.git ~/.config/nvim
 	# mv $HOME/.config/nvim/init.lua $HOME/.config/nvim/init.lua.tmp
 	# mv $HOME/.config/nvim/utils/init.lua $HOME/.config/nvim/init.lua
 	nvim -u $HOME/.config/nvim/init.lua +PackerInstall
@@ -121,7 +121,7 @@ installonubuntu() {
 
 installonarch() {
 	sudo pacman -S ripgrep fzf ranger
-	which yay >/dev/null && yay -S python-ueberzug-git || pipinstallueberzug
+	which paru >/dev/null && paru -S python-ueberzug-git || pipinstallueberzug && paru -S python-pynvim
 	pip3 install neovim-remote
 	npm install -g tree-sitter-cli
 }
