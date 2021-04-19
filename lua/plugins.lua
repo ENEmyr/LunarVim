@@ -120,6 +120,8 @@ return require("packer").startup(
 		-- 	end}
 		use 'tpope/vim-surround'
 		use {'neoclide/coc.nvim', branch = 'release'} -- Easy Fuzzy Search
+		use 'p00f/nvim-ts-rainbow' -- Rainbow parentheses
+
 		require_plugin('golden_size')
 		require_plugin('vim-easymotion')
 		require_plugin('vim-multiple-cursors')
@@ -129,6 +131,7 @@ return require("packer").startup(
 		require_plugin('coc.nvim')
 		require_plugin('hop.nvim')
 		require_plugin('nnn.vim')
+		require_plugin('nvim-ts-rainbow')
 		-- require_plugin('surround.nvim')
 		-- require_plugin('vim-surround')
     end

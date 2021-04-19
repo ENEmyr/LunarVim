@@ -55,6 +55,7 @@ require('golden-size')
 require('nnn')
 require('vim-multiple-cursors')
 require('nv-hop')
+require('nvim-ts-rainbow')
 vim.cmd('source ~/.config/nvim/vimscript/easy-fuzzy-motion/init.vim')
 vim.cmd('source ~/.config/nvim/vimscript/easymotion/init.vim')
 vim.api.nvim_command('autocmd VimEnter * :CocDisable') -- Disable Coc event to prevent annoying warning msg
